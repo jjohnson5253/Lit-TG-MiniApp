@@ -54,6 +54,7 @@ function App() {
 
       verifyInitData(tgApp.initData, import.meta.env.VITE_TELEGRAM_BOT_TOKEN)
         .then(( isVerified ) => {
+          console.log("isVerified", isVerified);
           setValid(isVerified);
         })
         .catch((error) => {
